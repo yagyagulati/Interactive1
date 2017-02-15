@@ -1,20 +1,47 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
 body {
-	background-color: white;
+	background-color: black;
  font-family: 'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
  }
 
  h1 {
- 	color: red
+ 	color: goldenrod;
  }
 
  h2 {
- 	color:yellowgreen;
+ 	color:wheat;
  }
 h3 {
 	color: red
 }
 
-.food{ 
-	{border-style: solid orange;
-size: : 20px;
- }
+.align{ 
+	float:left;
+	margin: 85px;
+}
+
+img {
+	width:255px;
+	height:auto;
+}
+
+.popup{
+	display: none;
+}
+
+div.popup-holder:hover .popup {
+	display: block;
+}
+
+#container{
+	width: 1400px;
+	overflow: auto;
+
+	margin: auto;
+}
+
+
