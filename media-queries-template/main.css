@@ -1,0 +1,63 @@
+* { margin: 0px; padding: 0px; }
+
+body {
+	background: black;
+}
+
+#desktop{
+	opacity: 1;
+	color: white;
+	margin-top: 250px;
+	text-align: center;
+	font-family: helvetica;
+	font-size: 50px;
+	color: red;
+}
+
+#tablet {
+	opacity: 0;
+	text-align: center;
+	font-family: helvetica;
+	font-size: 55px;
+	transform: rotate(-30deg) translateX(-100px);
+}
+#mobile {
+	opacity: 0;
+	text-align: center;
+	font-family: helvetica;
+	font-size: 60px;
+	transform: rotate(-90deg) translateX(-50px);
+}
+
+/* iPad */
+@media (min-width: 668px) and (max-width: 1024px) { 
+	body {
+		background: yellowgreen;
+	}
+
+	#tablet{
+		opacity: 1;
+	}
+
+	#desktop, #mobile {
+		opacity: 0;
+	}
+
+}
+
+/* iPhone 6*/
+@media (min-width: 375px) and (max-width: 667px) { 
+	
+	body {
+		background: lightblue;
+	}
+
+	#mobile{
+		opacity: 1;
+	}
+
+	#desktop, #tablet {
+		opacity: 0;
+	}
+
+}
