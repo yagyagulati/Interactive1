@@ -3,13 +3,24 @@
   padding: 0px;
 }
 
-.box {
+.mainbox {
   height: auto;
   width: 100vw;
   display: block;
   margin: 0px auto;
   text-align: center;
   padding-top: 30px;
+}
+.box {
+
+  float: left;
+  height:10px;
+  width: auto;
+  display: block;
+  margin: 125px;
+  text-align: center;
+  padding-top: 0px;
+  position: relative;
 }
 
 .arrow {
@@ -29,18 +40,10 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
-  height: 36px;
-  line-height: 35px;
-  padding: 0 20px;
-  font-size: 13px;
-  color: black;
-  background-color: orange;
   text-align: center;
   text-decoration: none;
   text-shadow: 0 -1px rgba(black, .4);
   background-clip: padding-box;
-  border: 1px solid;
-  border-radius: 2px;
   cursor: pointer;
   @include box-shadow(inset 0 1px rgba(white, .1),
                       inset 0 0 0 1px rgba(white, .08),
@@ -178,21 +181,12 @@ p{
    }
 
 h1 {
-  width: 75%;
+  width: 100%;
   display: block;
   margin: 0px auto;
   font-size: 21px;
   font-family: helvetica;
 }
-
-p:hover{
-  transform: scale(1.3);
-  transition-property: all;
-  transition-duration: 500ms;
-  transition-timing-function: ease;
-  transition-delay: initial;
-}
-
 
 div:hover > .popup1 {
   opacity: 1;
