@@ -1,0 +1,22 @@
+#Box1 {
+  background-color: none;
+  background-image: url('https://s25.postimg.org/3nb9scpof/iphone.png');
+  background-size: cover;
+  margin-left: 450px;
+  width: 291px;
+  height: 600px;
+    position: fixed;
+    top: 20px;
+
+}
+
+.content {
+  width: 250px;
+  margin-left:20px;
+  margin-top:75px;
+  height: 452px;
+    overflow: scroll;
+  border: 0px solid pink;
+
+
+}
