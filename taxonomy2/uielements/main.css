@@ -4,24 +4,44 @@
 }
 
 body {
-	background-color: black;
- font-family: 'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
+ font-family: helvetica;
+ font-weight: lighter;
+ font-size: 10pt;
  }
 
  h1 {
- 	color: goldenrod;
+ 	color: darkblue;
+ 	font-size: 10pt; 
+ 	font-weight: medium;
  }
 
  h2 {
- 	color:wheat;
+ 	color: darkblue;
+ 	font-size: 13pt; 
+ 	font-weight: lighter;
  }
 h3 {
 	color: red
 }
 
+
+#snapchat {
+  background: wheat;
+}
+
 .align{ 
 	float:left;
 	margin: 85px;
+}
+
+.box {
+  height: 200px;
+  width: 100vw;
+  display: block;
+  margin: 0px auto;
+  text-align: left;
+  padding-top: 30px;
+  font-family: helvetica;
 }
 
 img {
