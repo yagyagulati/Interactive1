@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-  background: black;
+  background: lightblue;
   min-height: 100%;
   font-family: "Arial", sans-serif;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 /* iPhone 6*/
-@media (min-width: 375px) and (max-width: 667px) { 
+@media (min-device-width: 375px) and (max-device-width: 667px) { 
   
   body {
     background: lightblue;
