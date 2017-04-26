@@ -75,9 +75,9 @@
   line-height: 16px;
   color: black;
   width: 120px;
-  left: -200px;
-  text-align: right;
-  background-color: orange;
+  left: 100px;
+  text-align: left;
+  background-color: lightblue;
   padding: 10px;
 
   opacity: 0;
@@ -159,7 +159,7 @@
 }
 
 #snapchat {
-  background: orange;
+  background: lightblue;
 }
 
 img{
