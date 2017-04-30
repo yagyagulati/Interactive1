@@ -1,5 +1,14 @@
 (function(){
 	
+	// set up a string based on the sequence of clicks
+	var sequence = '4318';
+
+	// a variable to store the sequence the user clicks
+	var usersequence = '';
+	
+	// a counter
+	var n = 0;
+
 	var Memory = {
 
 		init: function(cards){
@@ -37,6 +46,20 @@
 				$card.find(".inside").addClass("picked");
 				if(!_.guess){
 					_.guess = $(this).attr("data-id");
+					
+					// update the user sequence with the id clicked on
+					usersequence += $(this).attr("data-id");
+					
+					// increment n
+					n++;
+
+					// show in the console
+					console.log(sequence);
+					console.log(usersequence);
+					console.log(n);
+					
+					
+
 				} else if(_.guess == $(this).attr("data-id") && !$(this).hasClass("picked")){
 					$(".picked").addClass("matched");
 					_.guess = null;
@@ -47,9 +70,32 @@
 						$(".picked").removeClass("picked");
 						Memory.paused = false;
 					}, 600);
+
+					// update the user sequence with the id clicked on
+					usersequence += $(this).attr("data-id");
+					
+					// increment n
+					n++;
+
+					// show in the console
+					console.log(sequence);
+					console.log(usersequence);
+					console.log(n);
+
 				}
 				if($(".matched").length == $(".card").length){
 					_.win();
+				}
+
+				// after 4 clicks check if sequences match
+				if(n == 3) {
+					if(usersequence==sequence){
+						alert('true');
+					} else {
+						alert('false');
+						// if don't match, reset n
+						n = 0;	
+					}
 				}
 			}
 		},
