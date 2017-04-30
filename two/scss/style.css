@@ -1,4 +1,4 @@
-@import url(http://weloveiconfonts.com/api/?family=brandico);
+@import url(https://weloveiconfonts.com/api/?family=brandico);
 
 /* brandico */
 [class*="brandico-"]:before {
@@ -203,16 +203,6 @@ body {
 						background: lighten(#3b5998, 10%);
 					}
 				}
-				&.google {
-					background: #D34836;
-					&:hover {
-						background: lighten(#D34836, 10%);
-					}
-				}
-				&.twitter {
-					background: #4099FF;
-					&:hover {
-						background: lighten(#4099FF, 10%);
 					}
 				}
 			}

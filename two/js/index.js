@@ -1,7 +1,7 @@
 (function(){
 	
 	// set up a string based on the sequence of clicks
-	var sequence = '4318';
+	var sequence = '2453';
 
 	// a variable to store the sequence the user clicks
 	var usersequence = '';
@@ -22,7 +22,7 @@
 		},
 
 		shuffleCards: function(cardsArray){
-			this.$cards = $(this.shuffle(this.cardsArray));
+			this.$cards = $(this.cardsArray);
 		},
 
 		setup: function(){
@@ -42,6 +42,7 @@
 		cardClicked: function(){
 			var _ = Memory;
 			var $card = $(this);
+
 			if(!_.paused && !$card.find(".inside").hasClass("matched") && !$card.find(".inside").hasClass("picked")){
 				$card.find(".inside").addClass("picked");
 				if(!_.guess){
@@ -88,11 +89,12 @@
 				}
 
 				// after 4 clicks check if sequences match
-				if(n == 3) {
+				if(n == 4) {
 					if(usersequence==sequence){
-						alert('true');
+						_.win();
+
 					} else {
-						alert('false');
+						alert('Sorry, you are not eligible to unlock the Secret.');
 						// if don't match, reset n
 						n = 0;	
 					}
@@ -120,12 +122,11 @@
 
 		reset: function(){
 			this.hideModal();
-			this.shuffleCards(this.cardsArray);
 			this.setup();
 			this.$game.show("slow");
 		},
 
-		// Fisher--Yates Algorithm -- http://bost.ocks.org/mike/shuffle/
+		// Fisher--Yates Algorithm -- https://bost.ocks.org/mike/shuffle/
 		shuffle: function(array){
 			var counter = array.length, temp, index;
 	   	// While there are elements in the array
@@ -158,62 +159,62 @@
 
 	var cards = [
 		{
-			name: "php",
+			name: "i16",
 			img: "img/i6.jpg",
-			id: 1,
+			id: 10,
 		},
 		{
-			name: "css3",
-			img: "img/i3.jpg",
+			name: "i1",
+			img: "img/i1.jpg",
 			id: 2
 		},
 		{
-			name: "html5",
+			name: "i8",
 			img: "img/i8.jpg",
-			id: 3
+			id: 9
 		},
 		{
-			name: "jquery",
+			name: "i9",
 			img: "img/i9.jpg",
-			id: 4
+			id: 7
 		}, 
 		{
-			name: "javascript",
-			img: "img/i1.jpg",
+			name: "i3",
+			img: "img/i3.jpg",
 			id: 5
 		},
 		{
-			name: "node",
+			name: "i11",
 			img: "img/i11.jpg",
 			id: 6
 		},
 		{
-			name: "photoshop",
+			name: "i12",
 			img: "img/i12.jpg",
-			id: 7
+			id: 10
 		},
 		{
-			name: "python",
+			name: "i13",
 			img: "img/i13.jpg",
 			id: 8
 		},
 		{
-			name: "rails",
-			img: "img/i14.jpg",
-			id: 9
+			name: "i4",
+			img: "img/i4.jpg",
+			id: 3
 		},
 		{
-			name: "sass",
+			name: "i2",
 			img: "img/i2.jpg",
-			id: 10
+			id: 4
 		},
 		{
-			name: "sublime",
+			name: "i16",
 			img: "img/i16.jpg",
 			id: 11
 		},
 		{
-			name: "wordpress",
+			name: "i17",
 			img: "img/i17.jpg",
 			id: 12
 		},
