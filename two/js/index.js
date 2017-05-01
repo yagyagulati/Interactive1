@@ -65,12 +65,18 @@
 					$(".picked").addClass("matched");
 					_.guess = null;
 				} else {
+
 					_.guess = null;
-					_.paused = true;
-					setTimeout(function(){
-						$(".picked").removeClass("picked");
-						Memory.paused = false;
-					}, 600);
+					// _.paused = true;
+
+
+					_.paused = false;
+
+					
+					// setTimeout(function(){
+					// 	$(".picked").removeClass("picked");
+					// 	Memory.paused = false;
+					// }, 600);
 
 					// update the user sequence with the id clicked on
 					usersequence += $(this).attr("data-id");
@@ -90,6 +96,7 @@
 
 				// after 4 clicks check if sequences match
 				if(n == 4) {
+					_.paused = true;
 					if(usersequence==sequence){
 						_.win();
 
@@ -149,8 +156,8 @@
 				frag += '<div class="card" data-id="'+ v.id +'"><div class="inside">\
 				<div class="front"><img src="'+ v.img +'"\
 				alt="'+ v.name +'" /></div>\
-				<div class="back"><img src="img/i14.jpg"\
-				alt="Codepen" /></div></div>\
+				<div class="back"><img src="img/i'+v.id+'-back.jpg"\
+				alt="Interactive" /></div></div>\
 				</div>';
 			});
 			return frag;
@@ -191,7 +198,7 @@
 		{
 			name: "i12",
 			img: "img/i12.jpg",
-			id: 10
+			id: 1
 		},
 		{
 			name: "i13",

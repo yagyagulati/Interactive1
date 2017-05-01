@@ -1,7 +1,7 @@
 @import url(http://weloveiconfonts.com/api/?family=brandico);
 /* brandico */
 [class*="brandico-"]:before {
-  font-family: 'brandico', sans-serif;
+  font-family:helvetica;
 }
 
 * {
@@ -15,7 +15,7 @@ html, body {
 body {
   background: lightblue;
   min-height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: helvetica;
 }
 
 #mobile {
@@ -37,6 +37,8 @@ body {
   text-align: center;
   font-family: helvetica;
   font-size: 60px;
+  position: relative;
+  pointer-events: none;
 }
 
 /* iPhone 6*/
@@ -48,6 +50,7 @@ body {
 
   #mobile{
     opacity: 1;
+    pointer-events: all;
   }
 
   .wrap, .game, .modal-overlay, .modal, .winner, .message, .disclaimer {
@@ -93,7 +96,7 @@ body {
   float: left;
   width: 16.66666%;
   height: 25%;
-  padding: 5px;
+  padding: 1px;
   text-align: center;
   display: block;
   -webkit-perspective: 500px;
@@ -130,7 +133,6 @@ body {
           animation-delay: .4s;
 }
 .card .front, .card .back {
-  border: 1px solid black;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   position: absolute;
@@ -138,7 +140,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 0px;
 }
 .card .front img, .card .back img {
   max-width: 100%;
@@ -187,9 +189,9 @@ body {
   padding: 30px 10px;
 }
 .modal .winner {
-  font-size: 80px;
+  font-size: 60px;
   text-align: center;
-  font-family: "Anton", sans-serif;
+  font-family: helvetica;
   color: #4d4d4d;
   text-shadow: 0px 3px 0 black;
 }
@@ -199,7 +201,7 @@ body {
   }
 }
 .modal .restart {
-  font-family: "Anton", sans-serif;
+  font-family: helvetica;
   margin: 30px auto;
   padding: 20px 30px;
   display: block;
