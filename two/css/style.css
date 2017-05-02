@@ -31,6 +31,9 @@ body {
   font-weight: normal;
   color: white;
 }
+img.clue{
+ width: 20px;
+}
 
 #mobile {
   opacity: 0;
@@ -91,7 +94,9 @@ body {
   100% {
     background: white;
   }
-}
+
+
+
 .card {
   float: left;
   width: 16.66666%;
