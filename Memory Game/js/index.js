@@ -1,6 +1,19 @@
 
 (function(){
-	
+	var password = "Gregarious1@"; 
+(function promptPass() {
+
+  var psw = prompt("Enter your Password");
+
+  while (psw !== password) {
+    alert("Incorrect Password");
+    return promptPass();
+  }
+
+}());
+
+
+alert('WELCOME');
 	var Memory = {
 
 		init: function(cards){
