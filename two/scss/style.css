@@ -1,4 +1,5 @@
-@import url(http://weloveiconfonts.com/api/?family=brandico);
+@@ -1,227 +0,0 @@
+@import url(https://weloveiconfonts.com/api/?family=brandico);
 
 /* brandico */
 [class*="brandico-"]:before {
@@ -25,7 +26,6 @@ body {
   min-height: 500px;
   padding-bottom: 20px;
 }
-
 .game {
 	transform-style: preserve-3d;
 	perspective: 500px;
@@ -89,7 +89,7 @@ body {
   	left: 0;
   	width: 100%;
   	height: 100%;
-  	padding: 20px;
+  	padding: 5px;
 
   	img {
   		max-width: 100%;
@@ -203,16 +203,6 @@ body {
 						background: lighten(#3b5998, 10%);
 					}
 				}
-				&.google {
-					background: #D34836;
-					&:hover {
-						background: lighten(#D34836, 10%);
-					}
-				}
-				&.twitter {
-					background: #4099FF;
-					&:hover {
-						background: lighten(#4099FF, 10%);
 					}
 				}
 			}
@@ -235,4 +225,4 @@ footer {
 			font-size: 8px;
 		}
 	}
-}
+} 
