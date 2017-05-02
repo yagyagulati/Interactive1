@@ -23,7 +23,6 @@
 }
 
 #mobile {
-  max-device-width:500px;
   opacity: 0;
   text-align: center;
   font-family: helvetica;
