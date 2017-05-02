@@ -1,4 +1,3 @@
-@@ -1,227 +0,0 @@
 @import url(https://weloveiconfonts.com/api/?family=brandico);
 
 /* brandico */
@@ -26,6 +25,7 @@ body {
   min-height: 500px;
   padding-bottom: 20px;
 }
+
 .game {
 	transform-style: preserve-3d;
 	perspective: 500px;
@@ -89,7 +89,7 @@ body {
   	left: 0;
   	width: 100%;
   	height: 100%;
-  	padding: 5px;
+  	padding: 20px;
 
   	img {
   		max-width: 100%;
@@ -225,4 +225,4 @@ footer {
 			font-size: 8px;
 		}
 	}
-} 
+}
