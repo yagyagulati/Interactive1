@@ -40,14 +40,7 @@ body {
   position: relative;
   pointer-events: none;
   margin-left: 25px;
-}
 
-#clue{
-  float: left;
-  padding-top: : 1px;
-  padding-right: 1px;
-  padding-bottom: 1px;
-  padding-left: 1px;
 }
 /* iPhone 6*/
 @media (min-device-width: 375px) and (max-device-width: 667px) { 
