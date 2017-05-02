@@ -101,7 +101,7 @@
 						_.win();
 
 					} else {
-						alert('Sorry, you are not eligible to unlock the Secret.');
+						alert('Sorry, you are not eligible to unlock the Memory Game.');
 						// if don't match, reset n
 						n = 0;	
 					}
