@@ -39,6 +39,7 @@ body {
   font-size: 60px;
   position: relative;
   pointer-events: none;
+  background-color: black;
 }
 
 #clue{
