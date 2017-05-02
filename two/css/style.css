@@ -34,6 +34,7 @@ body {
 img.clue{
  width: 5px;
  float: left;
+ padding: 1px;
 }
 
 #mobile {
