@@ -43,6 +43,7 @@ body {
 
 #clue{
   float: left;
+  margin-left: 25px;
 }
 /* iPhone 6*/
 @media (min-device-width: 375px) and (max-device-width: 667px) { 
