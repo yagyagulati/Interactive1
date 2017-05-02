@@ -37,11 +37,15 @@
   body {
     background: lightblue;
   }
-
+.
   #mobile{
     opacity: 1;
     pointer-events: all;
   }
+  .wrap, .game, .modal-overlay, .modal, .winner, .message, .disclaimer {
+    opacity: 0;
+  }
+
 }
 
 html, body {
