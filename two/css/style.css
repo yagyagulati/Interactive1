@@ -33,11 +33,19 @@
 }
 /* iPhone 6*/
 
+/* iPhone 6*/
+@media (min-device-width: 375px) and (max-device-width: 667px) { 
+  
+  body {
+    background: lightblue;
+  }
+
   #mobile{
     opacity: 1;
     pointer-events: all;
   }
-  
+}
+
 html, body {
   height: 100%;
 }
