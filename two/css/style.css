@@ -31,7 +31,6 @@
   position: relative;
   pointer-events: none;
 }
-/* iPhone 6*/
 
 /* iPhone 6*/
 @media (min-device-width: 375px) and (max-device-width: 667px) { 
