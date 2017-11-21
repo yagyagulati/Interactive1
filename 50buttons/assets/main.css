@@ -1,0 +1,83 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* container */
+
+.container {
+	position: relative;
+	background-color: black;
+}
+
+/* items */
+
+.item {
+	height: 300px;
+	width: 300px;
+	color: black;
+	margin: 55px;
+	border-style: solid;
+	text-align: center;
+	border-width: 5px;
+
+
+
+	/* comment out 'float: left;' to have items stack in a single column */
+	float: left; 
+
+	/* uncomment this to get CSS transitions (conflicts with jQuery) */
+	/* transition: all 500ms ease; */
+}
+
+#button-1{
+	border-color: green;
+}
+
+/* example buttons */
+
+#button-1:hover {
+	transform: rotate(90deg) scale(1.5);
+	opacity: .3;
+}
+
+#button-1:active {
+	background: pink;
+	opacity: 1;
+}
+
+/* example buttons */
+
+#button-2::after {
+	content: 'this is added after the content inside the button';
+	color: white;
+}
+
+
+#button-2:hover::after {
+	content: 'this text changes on hover';
+	color: red;
+}
+
+#button-4:hover {
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#button-5: {
+	transition-property: opacity;left;
+    transition-duration: 5s; 
+}
+
+h1{
+	text-align: center;
+	font-size: 50px;
+}
+
